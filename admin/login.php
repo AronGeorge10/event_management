@@ -24,7 +24,7 @@ if (isset($_POST["submit"])) {
     <title>Admin Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function preventBack() {
             window.history.forward();
         }
@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
         window.onunload = function () {
             null
         };
-    </script>
+    </script> -->
 </head>
 
 <body class="bg-light">
@@ -55,6 +55,9 @@ if (isset($_POST["submit"])) {
                         <input type="password" class="form-control" name="password" id="password" required>
                     </div>
                     <button type="submit" class="btn btn-primary w-100" name="submit">Login</button>
+                    <div class="text-center">
+                        <a href="../index.php" class="align-items-center">Back to Portal</a>
+                    </div>
                 </form>
             </div>
         </div>
